@@ -1,0 +1,181 @@
+{
+  "site": {
+    "title": "Velocibet Devlog",
+    "description": "메신저 개발일지와 웹개발 기록",
+    "author": "Velocibet"
+  },
+  "categories": [
+    {
+      "id": "devlog",
+      "name": "개발 일지",
+      "description": "메신저를 만들며 남기는 기록"
+    },
+    {
+      "id": "web",
+      "name": "웹 개발",
+      "description": "HTML / CSS / JavaScript 강좌",
+      "subcategories": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "description": "HTML 기본 구조, 태그, 속성, 주석"
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "description": "글자 스타일, 레이아웃, 반응형, 애니메이션"
+        },
+        {
+          "id": "js",
+          "name": "JavaScript",
+          "description": "JS 문법, DOM, 이벤트, 동적 기능"
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "메신저 개발을 시작하며 #1",
+      "category": "devlog",
+      "date": "2026-01-15T00:00:00.000Z",
+      "tags": [
+        "messenger",
+        "devlog"
+      ],
+      "summary": "웹 기반 메신저 프로젝트의 시작과 기술 스택 정리"
+    },
+    {
+      "id": "2",
+      "title": "웹개발의 기초",
+      "category": "web",
+      "date": "2026-01-15T00:00:00.000Z",
+      "tags": [
+        "html",
+        "css",
+        "javascript",
+        "frontend",
+        "backend"
+      ],
+      "summary": "웹사이트를 구성하는 3요소와 프론트엔드, 백엔드의 개념을 알아봅니다."
+    },
+    {
+      "id": "3",
+      "title": "HTML 기초강좌 #1 - HTML이란 무엇인가?",
+      "category": "web",
+      "date": "2026-01-16T00:00:00.000Z",
+      "tags": [
+        "html"
+      ],
+      "summary": "웹 개발의 시작, HTML의 개념과 기본 구조를 알아봅니다.",
+      "subcategory": "html"
+    },
+    {
+      "id": "4",
+      "title": "HTML 기초강좌 #2 - 링크와 이미지 다는 방법",
+      "category": "web",
+      "date": "2026-01-17T00:00:00.000Z",
+      "tags": [
+        "html",
+        "webdev"
+      ],
+      "summary": "웹 페이지에서 자주 쓰는 a 태그와 img 태그, 그리고 기본 속성을 알아봅니다.",
+      "subcategory": "html"
+    },
+    {
+      "id": "5",
+      "title": "HTML 기초강좌 #3 - Style 속성으로 텍스트 꾸미기",
+      "category": "web",
+      "date": "2026-01-19T00:00:00.000Z",
+      "tags": [
+        "html",
+        "css"
+      ],
+      "summary": "HTML 요소에 style 속성을 사용해 글자 색과 크기를 바꾸는 방법을 알아봅니다.",
+      "subcategory": "html"
+    },
+    {
+      "id": "6",
+      "title": "HTML 기초강좌 #4 - HTML 주석 사용하기",
+      "category": "web",
+      "date": "2026-01-20T00:00:00.000Z",
+      "tags": [
+        "html",
+        "comment",
+        "webdev"
+      ],
+      "summary": "HTML에서 주석을 다는 방법과 활용법, 주석을 사용하는 이유를 알아봅니다.",
+      "subcategory": "html"
+    },
+    {
+      "id": "7",
+      "title": "CSS 기초강좌 #1 - CSS란 무엇인가?",
+      "category": "web",
+      "date": "2026-01-21T00:00:00.000Z",
+      "tags": [
+        "css"
+      ],
+      "summary": "웹 페이지의 스타일을 담당하는 CSS의 개념과 기본 구조를 알아봅니다.",
+      "subcategory": "css"
+    },
+    {
+      "id": "8",
+      "title": "CSS 기초강좌 #2 - CSS 문법과 속성",
+      "category": "web",
+      "date": "2026-01-22T00:00:00.000Z",
+      "tags": [
+        "css",
+        "styling"
+      ],
+      "summary": "CSS의 기본 문법과 자주 사용하는 속성들을 실습합니다.",
+      "subcategory": "css"
+    },
+    {
+      "id": "9",
+      "title": "CSS 기초강좌 #3 - CSS Selector 소개",
+      "category": "web",
+      "date": "2026-01-23T00:00:00.000Z",
+      "tags": [
+        "css",
+        "selector"
+      ],
+      "summary": "HTML 요소를 선택하여 스타일을 적용하는 다양한 선택자 방법을 알아봅니다.",
+      "subcategory": "css"
+    },
+    {
+      "id": "10",
+      "title": "JavaScript 기초 강좌 #1 - JavaScript란 무엇인가?",
+      "category": "web",
+      "date": "2026-01-24T00:00:00.000Z",
+      "tags": [
+        "javascript"
+      ],
+      "summary": "웹 페이지에 동적 기능을 더하는 JavaScript의 개념과 기초를 알아봅니다.",
+      "subcategory": "js"
+    },
+    {
+      "id": "11",
+      "title": "JavaScript 기초 강좌 #2 - 변수와 데이터 타입",
+      "category": "web",
+      "date": "2026-01-25T00:00:00.000Z",
+      "tags": [
+        "javascript",
+        "variable"
+      ],
+      "summary": "JavaScript에서 데이터를 저장하고 관리하는 변수의 개념과 사용법을 알아봅니다.",
+      "subcategory": "js"
+    },
+    {
+      "id": "12",
+      "title": "JavaScript 기초 강좌 #3 - 주석 다는 방법",
+      "category": "web",
+      "date": "2026-01-26T00:00:00.000Z",
+      "tags": [
+        "javascript",
+        "comment"
+      ],
+      "summary": "JavaScript에서 코드를 설명하고 관리하는 주석의 올바른 사용법을 배워봅니다.",
+      "subcategory": "js"
+    }
+  ]
+}

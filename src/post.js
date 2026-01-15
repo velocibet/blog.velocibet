@@ -1,0 +1,47 @@
+import fm from "front-matter"
+import { marked } from "marked";
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+const title = document.querySelector("#title");
+const date = document.querySelector("#date");
+const contentElement = document.querySelector(".content");
+const tagsElement = document.querySelector(".tags");
+
+function getCategoryName(categoryId, categories) {
+  const foundCategory = categories.find(cate => cate.id === categoryId);
+  return foundCategory ? foundCategory.name : categoryId;
+}
+
+async function setDocument() {
+  try {
+    const configRes = await fetch("/config.json");
+    const config = await configRes.json();
+
+    const res = await fetch(`/posts/${id}.md`);
+    const data = await res.text();
+
+    if (!data) return;
+
+    const { attributes, body } = await fm(data);
+    const content = await marked(body);
+
+    const categoryName = getCategoryName(attributes.category, config.categories);
+    title.innerHTML = `[${categoryName}] ${attributes.title}`;
+
+    const dateObj = new Date(attributes.date);
+    const formattedDate = `${dateObj.getFullYear()}년 ${dateObj.getMonth() + 1}월 ${dateObj.getDate()}일`; 
+    date.innerHTML = formattedDate;
+
+    contentElement.innerHTML = content;
+    hljs.highlightAll();
+    
+    const tagHtml = attributes.tags.map(t => `#${t}`).join(" ");
+    tagsElement.innerHTML = `<p>태그</p> <span>${tagHtml}</span>`;
+  } catch(err) {
+    console.error("게시글 및 카테고리를 불러오던 도중 에러가 발생했습니다.", err)
+  }
+}
+
+await setDocument();

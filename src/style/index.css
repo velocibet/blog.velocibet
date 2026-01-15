@@ -1,0 +1,125 @@
+.main-slider {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.main-slider img {
+    width: 100%;
+    height: auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main-container section {
+    width: 70%;
+}
+
+.main-container section #post-list {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.main-container section #post-list .post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.main-container section #post-list .post:hover {
+    cursor: pointer;
+}
+
+.main-container section #post-list .post:hover .title {
+    text-decoration: underline;
+}
+
+.main-container section #post-list .post .title {
+    font-size: 1.3rem;
+}
+
+.main-container section #post-list .post .summary {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.main-container section #post-list .post div {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.main-container aside{
+    padding-left: 10px;
+    width: calc(30% - 30px);
+    border-left: 1px solid #66666648;
+}
+
+.main-container aside #category-list > li {
+    margin-top: 15px;
+}
+
+.main-container aside #category-list > li > a {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.main-container aside #category-list li ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.main-container aside #category-list li ul li a {
+    font-size: 0.95rem;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+    background-color: #e0e0e0;
+}
+
+.pagination button.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .main-container section {
+    width: 100%;
+  }
+
+  .main-container aside {
+    width: 100%;
+  }
+}
