@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velocibet Devlog</title>
 
-    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style/post.css">
+    <script type="module" src="/src/layout.js"></script>
+    <script type="module" src="/src/post.js"></script>
 
     <meta name="description" content="개발 이야기를 기록하는 Velocibet 개발 일지입니다.">
     <meta name="keywords" content="웹개발, 메신저, 개발일지">
@@ -26,7 +29,7 @@
 
   </head>
   <body>
-    <header data-include="/layouts/header.html"></header>
+    <header data-include="/src/layouts/header.html"></header>
     <main>
       <div class="inner">
         <div class="main-container">
@@ -40,6 +43,6 @@
         </div>
       </div>
     </main>
-    <footer data-include="/layouts/footer.html"></footer>
+    <footer data-include="/src/layouts/footer.html"></footer>
   </body>
 </html>
