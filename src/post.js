@@ -1,5 +1,7 @@
 import fm from "front-matter"
 import { marked } from "marked";
+import "./style.css";
+import "./style/post.css";
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
@@ -36,7 +38,7 @@ async function setDocument() {
 
     contentElement.innerHTML = content;
     hljs.highlightAll();
-    
+
     const tagHtml = attributes.tags.map(t => `#${t}`).join(" ");
     tagsElement.innerHTML = `<p>태그</p> <span>${tagHtml}</span>`;
   } catch(err) {

@@ -1,6 +1,8 @@
 import fm from "front-matter"
 import { marked } from "marked";
 
+import "./style.css";
+
 const mainContainer = document.querySelector(".main-container");
 
 async function loadAbout() {
