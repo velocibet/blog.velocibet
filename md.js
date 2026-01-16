@@ -17,7 +17,7 @@ const postsDir = path.join(__dirname, "public", "posts");
 // 모든 md 파일 읽기 (about.md 제외)
 const files = fs
   .readdirSync(postsDir)
-  .filter(file => file.endsWith(".md") && file !== "about.md")
+  .filter(file => file.endsWith(".md") && file !== "about.md" && file !== "policy.md")
   .sort((a, b) => {
     // 파일 이름에서 숫자만 추출해서 비교
     const numA = parseInt(a.replace(/\.md$/, ""), 10);
