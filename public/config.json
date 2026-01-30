@@ -36,7 +36,7 @@
   "posts": [
     {
       "id": "1",
-      "title": "메신저 개발을 시작하며 #1",
+      "title": "메신저 개발 #1: 메신저 개발을 시작하며",
       "category": "devlog",
       "date": "2026-01-15T00:00:00.000Z",
       "tags": [
@@ -176,6 +176,17 @@
       ],
       "summary": "JavaScript에서 코드를 설명하고 관리하는 주석의 올바른 사용법을 배워봅니다.",
       "subcategory": "js"
+    },
+    {
+      "id": "13",
+      "title": "메신저 개발 #2: 뚫려있던 보안 구멍(IDOR) 막기와 DB 리팩터링",
+      "category": "devlog",
+      "date": "2026-01-30T00:00:00.000Z",
+      "tags": [
+        "messenger",
+        "devlog"
+      ],
+      "summary": "채팅방 생성 시스템 및 DB 구조 리팩터링"
     }
   ]
 }
